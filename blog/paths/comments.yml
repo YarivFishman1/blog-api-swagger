@@ -1,0 +1,17 @@
+tags:
+  - Comments
+summary: Return all comments of a post.
+description: Return comments on a post with postId={id}.
+parameters:
+  - in: query
+    name: postId
+    schema:
+      type: string
+    description: The postId which we want the comments
+responses:
+  "200":
+    description: A list of comments JSON format
+    content:
+      application/json:
+        schema:
+          $ref: "../definition/comments.yml"

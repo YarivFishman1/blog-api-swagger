@@ -1,0 +1,14 @@
+tags:
+  - Users
+summary: Deletes a user
+description: Deletes the user with id.
+parameters:
+  - name: id
+    in: path
+    required: true
+    description: The userId requested by user.
+    schema:
+      type: string
+responses:
+  "204":
+    description: The resource was deleted successfully.

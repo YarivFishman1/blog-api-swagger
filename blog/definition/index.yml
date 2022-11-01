@@ -1,0 +1,20 @@
+Comment:
+  $ref: comment.yml
+
+Comments:
+  $ref: comments.yml
+
+User:
+  $ref: user.yml
+
+Users:
+  $ref: users.yml
+
+Post:
+  $ref: post.yml
+
+Posts:
+  $ref: posts.yml
+
+PatchPost:
+  $ref: patch_post.yml

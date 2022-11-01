@@ -1,0 +1,23 @@
+type: object
+properties:
+  id:
+    type: integer
+    description: "The comment id."
+  postId:
+    type: integer
+    description: "The comment postId."
+  name:
+    type: string
+    description: "The name of the comment."
+  email:
+    type: string
+    description: "The email of the user who posted the comment."
+  body:
+    type: string
+    description: "The comment body."
+example:
+  id: 1
+  postId: 1
+  name: "The first comment"
+  email: "example@example.com"
+  body: "This is the first comment!"

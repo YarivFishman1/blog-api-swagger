@@ -1,0 +1,20 @@
+tags:
+  - Users
+summary: Update a user
+description: Update the user with id partially.
+parameters:
+  - name: id
+    in: path
+    required: true
+    description: The userId requested by user.
+    schema:
+      type: string
+requestBody:
+  required: true
+  content:
+    application/json:
+      schema:
+        $ref: "../../definition/patch_user.yml"
+responses:
+  "200":
+    description: Updated the user partially.

@@ -1,0 +1,24 @@
+name: ci
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: karancode/yamllint-github-action@master
+        with:
+          yamllint_file_or_dir: blog/
+          yamllint_config_filepath: yamlconfig.yml
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - name: Install swagger cli
+        run: npm install -g @apidevtools/swagger-cli
+      - name: Building the swagger json
+        run: swagger-cli bundle -o index.json blog/main.yml

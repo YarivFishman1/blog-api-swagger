@@ -1,0 +1,37 @@
+openapi: 3.0.0
+
+info:
+  title: Blog Posts API
+  description: >
+    This is an example API for blog posts using OpenApi Specification.
+
+    ---
+
+    Using this API you can retrieve blog posts, comments on each blog
+    post and delete or update the posts.
+  version: 1.0.0
+
+servers:
+  - url: "{protocol}://{environment}.example.com/v1"
+    variables:
+      environment:
+        default: api  # Production server
+        enum:
+          - api  # Production server
+          - api.dev  # Development server
+          - api.staging  # Staging server
+      protocol:
+        default: https
+        enum:
+          - http
+          - https
+      api_version:
+        default: v1
+        enum:
+          - v1
+
+paths:
+  $ref: ./paths/index.yml
+
+definition:
+  $ref: ./definition/index.yml

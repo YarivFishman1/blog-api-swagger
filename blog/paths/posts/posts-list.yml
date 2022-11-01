@@ -1,0 +1,11 @@
+tags:
+  - Posts
+summary: Return all the posts
+description: Return all the posts that are in our blog.
+responses:
+  "200":
+    description: An array of blog posts in JSON format
+    content:
+      application/json:
+        schema:
+          $ref: "../../definition/posts.yml"
