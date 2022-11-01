@@ -1,0 +1,14 @@
+tags:
+  - Posts
+summary: Deletes a post
+description: Deletes the post with id.
+parameters:
+  - name: id
+    in: path
+    required: true
+    description: The postId requested by user.
+    schema:
+      type: string
+responses:
+  "204":
+    description: The resource was deleted successfully.

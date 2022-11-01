@@ -1,0 +1,24 @@
+type: object
+properties:
+  id:
+    type: integer
+    description: "The post id."
+  userId:
+    type: integer
+    description: "The post userId."
+  title:
+    type: string
+    description: "The title of the post"
+  body:
+    type: string
+    description: "The body content of the post"
+required:
+  - id
+  - userId
+  - title
+  - body
+example:
+  userId: 1
+  id: 1
+  title: "The First Post"
+  body: "we are building a blog post API using OpenAPI Specification."

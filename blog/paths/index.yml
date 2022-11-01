@@ -1,0 +1,31 @@
+/comments:
+  get:
+    $ref: ./comments.yml
+
+/posts:
+  get:
+    $ref: ./posts/posts-list.yml
+  post:
+    $ref: ./posts/posts-create.yml
+
+/posts/{id}:
+  get:
+    $ref: ./posts/posts-get.yml
+  patch:
+    $ref: ./posts/posts-update.yml
+  delete:
+    $ref: ./posts/posts-delete.yml
+
+/users:
+  get:
+    $ref: ./users/users-list.yml
+  post:
+    $ref: ./users/users-create.yml
+
+/users/{id}:
+  get:
+    $ref: ./users/users-get.yml
+  patch:
+    $ref: ./users/users-update.yml
+  delete:
+    $ref: ./users/users-delete.yml

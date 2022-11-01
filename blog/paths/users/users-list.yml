@@ -1,0 +1,11 @@
+tags:
+  - Users
+summary: Return all the Users
+description: Return all the Users that are in our blog.
+responses:
+  "200":
+    description: An array of blog Users in JSON format
+    content:
+      application/json:
+        schema:
+          $ref: "../../definition/users.yml"

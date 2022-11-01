@@ -1,0 +1,18 @@
+tags:
+  - Users
+summary: Return a user
+description: Return a user with userId equals to id.
+parameters:
+  - name: id
+    in: path
+    required: true
+    description: The userId requested by user.
+    schema:
+      type: integer
+responses:
+  "200":
+    description: A blog Users in JSON format
+    content:
+      application/json:
+        schema:
+          $ref: "../../definition/user.yml"

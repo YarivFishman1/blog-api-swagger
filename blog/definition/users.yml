@@ -1,0 +1,26 @@
+Users:
+  description: "An array of user objects."
+  type: array
+  items:
+    $ref: "user.yml"
+  example:
+    [
+      {
+        "id": 1,
+        "name": "Etta Butler",
+        "email": "etta.butler@gmail.com",
+        "password": "eEJKHUMTdZ",
+      },
+      {
+        "id": 2,
+        "name": "Dan miller",
+        "email": "dan.miller@gmail.com",
+        "password": "6rZkK17nkZ",
+      },
+      {
+        "id": 3,
+        "name": "Carmen Rogers",
+        "email": "carmen.rogers@gmail.com",
+        "password": "WPVternoi7",
+      },
+    ]

@@ -1,0 +1,14 @@
+type: object
+properties:
+  id:
+    type: string
+    description: "The post id."
+  userId:
+    type: string
+    description: "The post userId."
+  title:
+    type: string
+    description: "The title of the post"
+  body:
+    type: string
+    description: "The body content of the post"
